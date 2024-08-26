@@ -4,6 +4,7 @@ package pkg2024_1_lab02;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) throws ParseException{
@@ -31,13 +32,13 @@ public class Main {
         pac01.getAtencionesMedicas().add(atm02);
         pac01.getAtencionesMedicas().add(atm03);
         
-        System.out.println("PRIMERA CONSULTA.....");
+        /*System.out.println("PRIMERA CONSULTA.....");
         System.out.println(atm01.consultarDatos());
         System.out.println(atm02.consultarDatos());
         System.out.println(atm03.consultarDatos());
         
         System.out.println("SEGUNDA CONSULTA.....");
-        pac01.listarCitasMedicasProgramadas();
+        pac01.listarCitasMedicasProgramadas();*/
     }
     
 }
