@@ -1,18 +1,5 @@
 package pe.edu.pucp.inf30.sesiones.publicaciones00;
 
-/**
- *
- * Autor: andres
- * 
- * 01. Se trabajará el autor en una clase adicional para que el comportamiento de la 
- *     impresión se pueda manejar correctamente. Se crea la clase Autor anidada a la clase Publicacion.
- * 02. Se cambia el atributo autores para que sea de tipo ArrayList<Autor>. 
- *     Con esto se cambia: la implementación de los constructores, la llamada a 
- *     los constructores por el cambio de nombre, la implementación de las 
- *     sobreescrituras de los métodos referenciar.
- * 03. Se crea el tipo enumerado Clase_de_Tesis que permitirá saber qué tipo de eso.
- *     Se encuentra dentro de la clase Tesis.
- */
 public class Publicaciones_v00 {
 
     public static void main(String[] args) {
