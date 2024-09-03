@@ -1,4 +1,6 @@
-package pe.edu.pucp.inf30.sesiones.publicaciones00;
+package pe.edu.pucp.inf30.sesiones.publicaciones01.publicaciones.estandardIEEE;
+
+import pe.edu.pucp.inf30.sesiones.publicaciones01.publicaciones.Publicacion;
 
 /**
  *

@@ -1,14 +1,9 @@
-package pe.edu.pucp.inf30.sesiones.publicaciones00;
+package pe.edu.pucp.inf30.sesiones.publicaciones01.publicaciones.estandardIEEE;
 
-/**
- *
- * Autor: andres
- */
+import pe.edu.pucp.inf30.sesiones.publicaciones01.publicaciones.Clase_de_Tesis;
+import pe.edu.pucp.inf30.sesiones.publicaciones01.publicaciones.Publicacion;
+
 public class Tesis extends Publicacion {
-
-    public enum Clase_de_Tesis {
-        LICENCIATURA, MAESTRIA, DOCTORADO
-    };
 
     private Clase_de_Tesis clase;
     private String departamento;
