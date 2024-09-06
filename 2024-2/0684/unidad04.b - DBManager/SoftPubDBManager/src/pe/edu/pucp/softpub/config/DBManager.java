@@ -36,14 +36,16 @@ public class DBManager {
             DBManager.dbManager = new DBManager();
     }
     
-    public Connection getConnection() throws SQLException{        
+    public Connection getConnection(){        
         try {
             leer_archivo_de_propiedades();
             Class.forName(this.driver);
-            this.conexion = DriverManager.getConnection(getURL(), this.usuario, descifrarMD5(this.contraseña));
+            DBManager.dbManager.conexion = DriverManager.getConnection(getURL(), this.usuario, descifrarMD5(this.contraseña));
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(DBManager.class.getName()).log(Level.SEVERE, null, ex);
-        }        
+        } catch (SQLException ex) {        
+            Logger.getLogger(DBManager.class.getName()).log(Level.SEVERE, null, ex);
+        }
         return this.conexion;
     }
     

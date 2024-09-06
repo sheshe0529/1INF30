@@ -17,12 +17,7 @@ public class SoftPubDBManagerTest {
         System.out.println(dbManager);
         dbManager = DBManager.getInstance();
         System.out.println(dbManager);
-        
-        try {
-            Connection conexion = dbManager.getConnection();
-        } catch (SQLException ex) {
-            Logger.getLogger(SoftPubDBManagerTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Connection conexion = dbManager.getConnection();        
     }
     
 }
