@@ -25,6 +25,8 @@ public class DBManager {
     private String contraseña;
     private static DBManager dbManager = null;
     
+    private DBManager(){}; //constructor privado para que no se pueda instanciar
+    
     public static DBManager getInstance(){
         if (DBManager.dbManager == null)
             createInstance();
@@ -40,7 +42,7 @@ public class DBManager {
         leer_archivo_propiedades();
         try {
             Class.forName(this.driver);
-            DBManager.dbManager.conexion = DriverManager.getConnection(getURL(), this.usuario, descifrarMD5(this.contraseña));
+            this.conexion = DriverManager.getConnection(getURL(), this.usuario, descifrarMD5(this.contraseña));
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(DBManager.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {        

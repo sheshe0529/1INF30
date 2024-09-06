@@ -6,6 +6,7 @@ import java.sql.Connection;
 public class SoftPubDBManagerTest {
 
     public static void main(String[] args) {
+        //DBManager dbManager = new DBManager();
         DBManager dbManager = DBManager.getInstance();
         System.out.println(dbManager);
         dbManager = DBManager.getInstance();
