@@ -7,7 +7,7 @@ import pe.edu.pucp.softpub.persona.model.Nivel;
 public class SoftPubPersonaTest {
 
     public static void main(String[] args) {
-        //SeccionBOTest();
+        SeccionBOTest();
         EspecialidadBOTest();
     }
 
