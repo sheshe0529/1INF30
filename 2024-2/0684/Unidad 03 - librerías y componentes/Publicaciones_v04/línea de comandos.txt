@@ -54,4 +54,7 @@ el siguiente comando no funciona por que nos encontramos en la raíz
 jar cvfm lib_eje/paquete_ejecutable.jar MANIFEST.MF pe/edu/pucp/inf30/sesiones/publicaciones03/publicaciones/*.class pe/edu/pucp/inf30/sesiones/publicaciones03/publicaciones/estandardAPA/*.class pe/edu/pucp/inf30/sesiones/publicaciones03/publicaciones/estandardIEEE/*.class pe/edu/pucp/inf30/sesiones/publicaciones03/publicaciones/*.class
 
 cd build >> en ese carpeta se encuentran los compilados
-jar cvfm ../lib_eje/paquete_ejecutable.jar ../MANIFEST.MF pe/edu/pucp/inf30/sesiones/publicaciones03/publicaciones/*.class pe/edu/pucp/inf30/sesiones/publicaciones03/publicaciones/estandardAPA/*.class pe/edu/pucp/inf30/sesiones/publicaciones03/publicaciones/estandardIEEE/*.class pe/edu/pucp/inf30/sesiones/publicaciones03/publicaciones/*.class
+jar cvfm ../lib_eje/paquete_ejecutable.jar ../MANIFEST.MF pe/edu/pucp/inf30/sesiones/publicaciones03/publicaciones/*.class pe/edu/pucp/inf30/sesiones/publicaciones03/publicaciones/estandardAPA/*.class pe/edu/pucp/inf30/sesiones/publicaciones03/publicaciones/estandardIEEE/*.class pe/edu/pucp/inf30/sesiones/publicaciones03/*.class
+
+cd ..
+java -jar lib_eje/paquete_ejecutable.jar

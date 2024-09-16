@@ -16,4 +16,8 @@ public class SeccionBO {
         Seccion seccion = new Seccion(idSeccion, nombre_seccion, departamento);
         return seccionDAO.insertar(seccion);
     }
+
+    public void listarTodos() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

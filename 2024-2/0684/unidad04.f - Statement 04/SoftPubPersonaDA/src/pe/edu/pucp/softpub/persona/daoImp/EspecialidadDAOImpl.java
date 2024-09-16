@@ -60,12 +60,12 @@ public class EspecialidadDAOImpl extends DAOImpl implements EspecialidadDAO {
             String sql = "select idEspecialidad, especialidad, facultad, nivel from Especialidad";
             this.ejecutarConsultaEnBD(sql);
             while (this.resultset.next()) {
-                Especialidad especialidad = new Especialidad();
-                especialidad.setIdEspecialidad(this.resultset.getInt("idEspecialidad"));
-                especialidad.setEspecialidad(this.resultset.getString("especialidad"));
-                especialidad.setFacultad(this.resultset.getString("facultad"));
-                especialidad.setNivel(Nivel.valueOf(this.resultset.getString("nivel")));
-                listaEspecialidad.add(especialidad);
+                Especialidad especialidad_local = new Especialidad();
+                especialidad_local.setIdEspecialidad(this.resultset.getInt("idEspecialidad"));
+                especialidad_local.setEspecialidad(this.resultset.getString("especialidad"));
+                especialidad_local.setFacultad(this.resultset.getString("facultad"));
+                especialidad_local.setNivel(Nivel.valueOf(this.resultset.getString("nivel")));
+                listaEspecialidad.add(especialidad_local);
             }
         } catch (SQLException ex) {
             Logger.getLogger(EspecialidadDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -76,7 +76,6 @@ public class EspecialidadDAOImpl extends DAOImpl implements EspecialidadDAO {
                 Logger.getLogger(EspecialidadDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-
         return listaEspecialidad;
     }
 
