@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: pe/edu/pucp/inf30/sesiones/publicaciones03/Publicaciones_v01
+Class-Path: paquete_ejecutable.jar
