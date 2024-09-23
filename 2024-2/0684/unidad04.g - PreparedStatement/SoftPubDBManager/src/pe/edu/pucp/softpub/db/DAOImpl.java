@@ -3,7 +3,7 @@ package pe.edu.pucp.softpub.db;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.PreparedStatement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import pe.edu.pucp.softpub.config.DBManager;
@@ -12,11 +12,13 @@ public abstract class DAOImpl {
 
     protected String nombre_tabla;
     protected Connection conexion;
-    protected Statement statement;
+    protected PreparedStatement statement;
     protected ResultSet resultset;
+    protected Boolean retornarLlavePrimaria;
 
     public DAOImpl(String nombre_tabla) {
         this.nombre_tabla = nombre_tabla;
+        this.retornarLlavePrimaria = false;
     }
     
     protected void abrirConexion() throws SQLException {
@@ -44,12 +46,12 @@ public abstract class DAOImpl {
     }
 
     protected Integer ejecutarModificacionesEnBD(String sql) throws SQLException {
-        this.statement = this.conexion.createStatement();
+        this.statement = this.conexion.prepareStatement(sql);
         return this.statement.executeUpdate(sql);
     }
     
     protected void ejecutarConsultaEnBD(String sql) throws SQLException {
-        this.statement = this.conexion.createStatement();
+        this.statement = this.conexion.prepareStatement(sql);
         this.resultset = this.statement.executeQuery(sql);
     }
 
@@ -59,6 +61,10 @@ public abstract class DAOImpl {
             this.iniciarTransaccion();
             String sql = this.generarSQLParaInsercion();
             resultado = this.ejecutarModificacionesEnBD(sql);
+            if (this.retornarLlavePrimaria){
+                Integer id = this.retornarUltimoAutoGenerado();
+                resultado = id;
+            }
             this.comitarTransaccion();
         } catch (SQLException ex) {
             try {
@@ -75,9 +81,8 @@ public abstract class DAOImpl {
             }
         }
         return resultado;
-
     }
-
+    
     private String generarSQLParaInsercion() {
         String sql = "insert into " + this.nombre_tabla;
         sql = sql.concat(" (");
@@ -91,5 +96,14 @@ public abstract class DAOImpl {
     protected abstract String obtenerListaDeAtributosParaInsert();
 
     protected abstract String obtenerListaDeValoresParaInsert();
+
+    protected Integer retornarUltimoAutoGenerado() throws SQLException {
+        Integer resultado = null;
+        String sql = "select @@last_insert_id as id";
+        this.ejecutarConsultaEnBD(sql);
+        if (this.resultset.next())
+            resultado = this.resultset.getInt("id");
+        return resultado;
+    }
 
 }
