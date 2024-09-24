@@ -53,7 +53,8 @@ public class SeccionDAOImpl extends DAOImpl implements SeccionDAO{
             sql = sql.concat("departamento = '" + seccion.getDepartamento()+ "'");
             sql = sql.concat(" where ");
             sql = sql.concat("idSeccion = '" + seccion.getIdSeccion() + "'");            
-            this.statement = this.conexion.createStatement();
+            //TODO se debe refactorizar este código, enviar a DAOImpl
+            //this.statement = this.conexion.createStatement();
             resultado = this.statement.executeUpdate(sql);
             this.conexion.commit();
         } catch (SQLException ex) {

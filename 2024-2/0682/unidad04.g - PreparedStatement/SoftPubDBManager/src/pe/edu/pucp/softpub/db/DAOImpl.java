@@ -3,7 +3,7 @@ package pe.edu.pucp.softpub.db;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.PreparedStatement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import pe.edu.pucp.softpub.config.DBManager;
@@ -12,11 +12,13 @@ public abstract class DAOImpl {
 
     protected String nombre_tabla;
     protected Connection conexion;
-    protected Statement statement;
-    protected ResultSet resultSet;    
+    protected PreparedStatement statement;
+    protected ResultSet resultSet; 
+    protected Boolean retornarLlavePrimaria;
 
     public DAOImpl(String nombre_tabla){
         this.nombre_tabla = nombre_tabla;
+        this.retornarLlavePrimaria = false;
     }
     
     protected void cerrarConexion() throws SQLException {
@@ -41,8 +43,13 @@ public abstract class DAOImpl {
     }
 
     protected Integer ejecutarModificacionesEnBD(String sql) throws SQLException {
-        this.statement = this.conexion.createStatement();
+        this.statement = this.conexion.prepareStatement(sql);
         return this.statement.executeUpdate(sql);
+    }
+    
+    private void ejecutarConsultaEnBD(String sql) throws SQLException {
+        this.statement = this.conexion.prepareStatement(sql);
+        this.resultSet = this.statement.executeQuery();
     }
 
     public Integer insertar() {
@@ -51,6 +58,10 @@ public abstract class DAOImpl {
             this.iniciarTransaccion();
             String sql = this.generarSQLParaInsercion();
             resultado = this.ejecutarModificacionesEnBD(sql);
+            if (this.retornarLlavePrimaria){
+                Integer id = this.retornarUltimoAutoGenerado();
+                resultado = id;
+            }
             this.comitarTransaccion();
         } catch (SQLException ex) {
             try {
@@ -84,4 +95,14 @@ public abstract class DAOImpl {
     
     protected abstract String obtenerListaValoresParaInsertar();
 
+    /*este método siempre se usa dentro de una transacción. */
+    protected Integer retornarUltimoAutoGenerado() throws SQLException {
+        Integer resultado = null;
+        String sql = "select @@last_insert_id as id";
+        this.ejecutarConsultaEnBD(sql);
+        if (this.resultSet.next())
+            resultado = this.resultSet.getInt("id");
+        return resultado;
+    }
+    
 }
