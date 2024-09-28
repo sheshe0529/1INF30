@@ -46,10 +46,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAOImpl\AlumnoDAOImpl.cs" />
+    <Compile Include="DAOImpl\EspecialidadDAOImpl.cs" />
+    <Compile Include="DAOImpl\PersonaDAOImpl.cs" />
+    <Compile Include="DAOImpl\ProfesorDAOImpl.cs" />
+    <Compile Include="DAOImpl\SeccionDAOImpl.cs" />
+    <Compile Include="DAO\AlumnoDAO.cs" />
+    <Compile Include="DAO\EspecialidadDAO.cs" />
+    <Compile Include="DAO\PersonaDAO.cs" />
+    <Compile Include="DAO\ProfesorDAO.cs" />
+    <Compile Include="DAO\SeccionDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SofPubDBManager\SofPubDBManager.csproj">
+      <Project>{ba093f4b-93e2-45df-80ff-41261ed2584e}</Project>
+      <Name>SofPubDBManager</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
