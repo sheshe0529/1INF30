@@ -46,10 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Grupo.cs" />
+    <Compile Include="Linea.cs" />
+    <Compile Include="ProductosLinea.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SoftPubPublicacionModel\SoftPubPublicacionModel.csproj">
+      <Project>{dc8a3644-3de5-4034-a849-a496edc99981}</Project>
+      <Name>SoftPubPublicacionModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
