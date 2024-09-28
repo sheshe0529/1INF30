@@ -46,7 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArticuloBO.cs" />
+    <Compile Include="AutorBO.cs" />
+    <Compile Include="CapituloBO.cs" />
+    <Compile Include="ConferenciaBO.cs" />
+    <Compile Include="EditorialBO.cs" />
+    <Compile Include="LibroBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicacionBO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
