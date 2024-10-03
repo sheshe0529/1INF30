@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using SoftPubPersonaDA.DAO;
+using SoftPubPersonaDA.DAOImpl;
+
+namespace SoftPubPersonaBO
+{
+    public class SeccionBO
+    {
+        private SeccionDAO seccionDAO;
+
+        public SeccionBO() 
+        { 
+            this.seccionDAO = new SeccionDAOImpl();
+        }
+
+        public BindingList<Object> listarTodos()
+        {
+            return this.seccionDAO.listarTodos();
+        }
+    }
+}
