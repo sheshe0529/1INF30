@@ -56,6 +56,7 @@ namespace SofPubDBManager
 
         protected BindingList<Object> listarTodos(int? limite)
         {
+            this.Comando = new MySqlCommand();
             BindingList<Object> lista = new BindingList<Object>(); 
             try
             {

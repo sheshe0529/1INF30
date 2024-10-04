@@ -1,26 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\",
+  "WorkspaceRootPath": "D:\\unidad06.b_Web_02\\SofPub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC4F370D-7BDA-4759-ACC3-C778A13D2FBA}|SoftPubPersonaDA\\SoftPubPersonaDA.csproj|G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\softpubpersonada\\daoimpl\\secciondaoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC4F370D-7BDA-4759-ACC3-C778A13D2FBA}|SoftPubPersonaDA\\SoftPubPersonaDA.csproj|solutionrelative:softpubpersonada\\daoimpl\\secciondaoimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65F988B0-B281-4991-9555-E0946F6DA70F}|SoftPubWA\\SoftPubWA.csproj|d:\\unidad06.b_web_02\\sofpub\\softpubwa\\mantenimiento_seccion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65F988B0-B281-4991-9555-E0946F6DA70F}|SoftPubWA\\SoftPubWA.csproj|solutionrelative:softpubwa\\mantenimiento_seccion.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC4F370D-7BDA-4759-ACC3-C778A13D2FBA}|SoftPubPersonaDA\\SoftPubPersonaDA.csproj|G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\softpubpersonada\\dao\\secciondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC4F370D-7BDA-4759-ACC3-C778A13D2FBA}|SoftPubPersonaDA\\SoftPubPersonaDA.csproj|solutionrelative:softpubpersonada\\dao\\secciondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65F988B0-B281-4991-9555-E0946F6DA70F}|SoftPubWA\\SoftPubWA.csproj|D:\\unidad06.b_Web_02\\SofPub\\softpubwa\\mantenimiento_seccion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{65F988B0-B281-4991-9555-E0946F6DA70F}|SoftPubWA\\SoftPubWA.csproj|solutionrelative:softpubwa\\mantenimiento_seccion.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AB193FBA-6F7F-40ED-8D8D-7BE5695DD59F}|SoftPubPersonaBO\\SoftPubPersonaBO.csproj|G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\softpubpersonabo\\seccionbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB193FBA-6F7F-40ED-8D8D-7BE5695DD59F}|SoftPubPersonaBO\\SoftPubPersonaBO.csproj|solutionrelative:softpubpersonabo\\seccionbo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA093F4B-93E2-45DF-80FF-41261ED2584E}|SofPubDBManager\\SofPubDBManager.csproj|g:\\mi unidad\\githubrepositorio\\1inf30\\2024-2\\0682\\unidad06.a_web_02\\sofpub\\sofpubdbmanager\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA093F4B-93E2-45DF-80FF-41261ED2584E}|SofPubDBManager\\SofPubDBManager.csproj|solutionrelative:sofpubdbmanager\\dbmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA093F4B-93E2-45DF-80FF-41261ED2584E}|SofPubDBManager\\SofPubDBManager.csproj|G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\sofpubdbmanager\\daoimplbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA093F4B-93E2-45DF-80FF-41261ED2584E}|SofPubDBManager\\SofPubDBManager.csproj|solutionrelative:sofpubdbmanager\\daoimplbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65F988B0-B281-4991-9555-E0946F6DA70F}|SoftPubWA\\SoftPubWA.csproj|D:\\unidad06.b_Web_02\\SofPub\\softpubwa\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{65F988B0-B281-4991-9555-E0946F6DA70F}|SoftPubWA\\SoftPubWA.csproj|solutionrelative:softpubwa\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,71 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DBManager.cs",
-              "DocumentMoniker": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\SofPubDBManager\\DBManager.cs",
-              "RelativeDocumentMoniker": "SofPubDBManager\\DBManager.cs",
-              "ToolTip": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\SofPubDBManager\\DBManager.cs",
-              "RelativeToolTip": "SofPubDBManager\\DBManager.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwBgAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T16:12:00.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SeccionBO.cs",
-              "DocumentMoniker": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\SoftPubPersonaBO\\SeccionBO.cs",
-              "RelativeDocumentMoniker": "SoftPubPersonaBO\\SeccionBO.cs",
-              "ToolTip": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\SoftPubPersonaBO\\SeccionBO.cs",
-              "RelativeToolTip": "SoftPubPersonaBO\\SeccionBO.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAvwBYAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T13:46:14.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SeccionDAO.cs",
-              "DocumentMoniker": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\SoftPubPersonaDA\\DAO\\SeccionDAO.cs",
-              "RelativeDocumentMoniker": "SoftPubPersonaDA\\DAO\\SeccionDAO.cs",
-              "ToolTip": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\SoftPubPersonaDA\\DAO\\SeccionDAO.cs",
-              "RelativeToolTip": "SoftPubPersonaDA\\DAO\\SeccionDAO.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAvwAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T13:44:27.281Z",
+              "Title": "index.aspx",
+              "DocumentMoniker": "D:\\unidad06.b_Web_02\\SofPub\\SoftPubWA\\index.aspx",
+              "RelativeDocumentMoniker": "SoftPubWA\\index.aspx",
+              "ToolTip": "D:\\unidad06.b_Web_02\\SofPub\\SoftPubWA\\index.aspx",
+              "RelativeToolTip": "SoftPubWA\\index.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-04T13:26:47.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SeccionDAOImpl.cs",
-              "DocumentMoniker": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\SoftPubPersonaDA\\DAOImpl\\SeccionDAOImpl.cs",
-              "RelativeDocumentMoniker": "SoftPubPersonaDA\\DAOImpl\\SeccionDAOImpl.cs",
-              "ToolTip": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\SoftPubPersonaDA\\DAOImpl\\SeccionDAOImpl.cs",
-              "RelativeToolTip": "SoftPubPersonaDA\\DAOImpl\\SeccionDAOImpl.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACMAAAAdAAAAAAAAAA==",
+              "Title": "mantenimiento_seccion.aspx.cs",
+              "DocumentMoniker": "D:\\unidad06.b_Web_02\\SofPub\\SoftPubWA\\mantenimiento_seccion.aspx.cs",
+              "RelativeDocumentMoniker": "SoftPubWA\\mantenimiento_seccion.aspx.cs",
+              "ToolTip": "D:\\unidad06.b_Web_02\\SofPub\\SoftPubWA\\mantenimiento_seccion.aspx.cs",
+              "RelativeToolTip": "SoftPubWA\\mantenimiento_seccion.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T13:43:53.089Z",
+              "WhenOpened": "2024-10-04T13:21:47.861Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DAOImplBase.cs",
-              "DocumentMoniker": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\SofPubDBManager\\DAOImplBase.cs",
-              "RelativeDocumentMoniker": "SofPubDBManager\\DAOImplBase.cs",
-              "ToolTip": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad06.a_Web_02\\SofPub\\SofPubDBManager\\DAOImplBase.cs",
-              "RelativeToolTip": "SofPubDBManager\\DAOImplBase.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAswDgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T13:11:06.078Z"
+              "DocumentIndex": 1,
+              "Title": "mantenimiento_seccion.aspx",
+              "DocumentMoniker": "D:\\unidad06.b_Web_02\\SofPub\\SoftPubWA\\mantenimiento_seccion.aspx",
+              "RelativeDocumentMoniker": "SoftPubWA\\mantenimiento_seccion.aspx",
+              "ToolTip": "D:\\unidad06.b_Web_02\\SofPub\\SoftPubWA\\mantenimiento_seccion.aspx",
+              "RelativeToolTip": "SoftPubWA\\mantenimiento_seccion.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-10-04T13:05:32.512Z",
+              "EditorCaption": ""
             }
           ]
         }
