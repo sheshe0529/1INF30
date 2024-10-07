@@ -21,6 +21,41 @@ namespace SoftPubGrupoDA.DAOImpl
             throw new NotImplementedException();
         }
 
+        protected override void incluirValorParametrosParaEliminacion()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void incluirValorParametrosParaInsercion()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void incluirValorParametrosParaModificacion()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override string obtenerListaAtributosParaInsercion()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override string obtenerListaAtributosParaModificacion()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override string obtenerListaParametrosParaInsercion()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override string obtenerPredicadoParaLlavePrimaria()
+        {
+            throw new NotImplementedException();
+        }
+
         protected override string obtenerProyeccionParaSelect()
         {
             throw new NotImplementedException();

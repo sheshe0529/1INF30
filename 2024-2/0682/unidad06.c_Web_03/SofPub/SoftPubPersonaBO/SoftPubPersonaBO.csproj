@@ -65,6 +65,10 @@
       <Project>{EC4F370D-7BDA-4759-ACC3-C778A13D2FBA}</Project>
       <Name>SoftPubPersonaDA</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SoftPubPersonaModel\SoftPubPersonaModel.csproj">
+      <Project>{86A67B63-9224-4D14-BC90-2D8667F4C9D9}</Project>
+      <Name>SoftPubPersonaModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SoftPubPublicacionDA\SoftPubPublicacionDA.csproj">
       <Project>{4185e831-7832-433c-a9a6-025f77f2df54}</Project>
       <Name>SoftPubPublicacionDA</Name>

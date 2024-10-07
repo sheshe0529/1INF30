@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
@@ -40,6 +41,25 @@ namespace SofPubDBManager
             UsarTransaccion = true;
         }
 
+        protected void iniciarTransaccion()
+        {
+            this.abrirConexion();
+            this.Transaccion = this.Conexion.BeginTransaction();
+        }
+
+        protected void comitarTransaccion()
+        {
+            this.Transaccion.Commit();
+            this.Transaccion = null;
+        }
+
+        protected void rollbackTransaccion()
+        {
+            if (this.Transaccion != null)
+                this.Transaccion.Rollback();
+            this.Transaccion = null;
+        }
+
         protected void abrirConexion()
         {
             this.Conexion = DBManager.Instance.Conexion;
@@ -52,6 +72,129 @@ namespace SofPubDBManager
             {
                 this.Conexion.Close();
             }
+        }
+
+        private int ejecutar_DML(Tipo_Operacion tipo_operacion)
+        {
+            int resultado = 0;
+            try
+            {
+                if (this.usarTransaccion)
+                    this.iniciarTransaccion();
+                this.Comando = new MySqlCommand();
+                string sql = "";
+                switch (tipo_operacion)
+                {
+                    case Tipo_Operacion.INSERTAR:
+                        sql = this.generarSQLParaInsercion();
+                        break;
+                    case Tipo_Operacion.MODIFICAR:
+                        sql = this.generarSQLParaModificacion();
+                        break;
+                    case Tipo_Operacion.ELIMINAR:
+                        sql = this.generarSQLParaEliminacion();
+                        break;
+                }
+                this.Comando.Connection = this.Conexion;
+                this.Comando.CommandType = System.Data.CommandType.Text;
+                this.Comando.CommandText = sql;
+                switch (tipo_operacion)
+                {
+                    case Tipo_Operacion.INSERTAR:
+                        this.incluirValorParametrosParaInsercion();
+                        break;
+                    case Tipo_Operacion.MODIFICAR:
+                        this.incluirValorParametrosParaModificacion();
+                        break;
+                    case Tipo_Operacion.ELIMINAR:
+                        this.incluirValorParametrosParaEliminacion();
+                        break;
+                }
+                this.Comando.ExecuteNonQuery();
+                if (RetornarLlavePrimaria)
+                {
+                    int id = this.retornarUltimoAutoGenerado();
+                    resultado = id;
+                }
+                if (this.usarTransaccion)
+                    this.comitarTransaccion();
+            }
+            catch (Exception e)
+            {
+                if (this.usarTransaccion)
+                    this.rollbackTransaccion();
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                this.cerrarConexion();
+            }
+            return resultado;
+        }
+
+        protected int insertar()
+        {
+            return this.ejecutar_DML(Tipo_Operacion.INSERTAR);
+        }
+
+        protected int modificar()
+        {
+            return this.ejecutar_DML(Tipo_Operacion.MODIFICAR);
+        }
+
+        protected int eliminar()
+        {
+            return this.ejecutar_DML(Tipo_Operacion.ELIMINAR);
+        }
+
+        private string generarSQLParaInsercion()
+        {
+            string sql = "insert into ";
+            sql += this.Nombre_tabla;
+            sql += " (";
+            sql += this.obtenerListaAtributosParaInsercion();
+            sql += ") values (";
+            sql += this.obtenerListaParametrosParaInsercion();
+            sql += ")";
+            return sql;
+        }
+
+        protected abstract string obtenerListaAtributosParaInsercion();
+
+        protected abstract string obtenerListaParametrosParaInsercion();
+
+        protected abstract void incluirValorParametrosParaInsercion();
+
+        private string generarSQLParaModificacion()
+        {
+            string sql = "update ";
+            sql += this.Nombre_tabla;
+            sql += " set ";
+            sql += this.obtenerListaAtributosParaModificacion();
+            sql += " where ";
+            sql += this.obtenerPredicadoParaLlavePrimaria();
+            return sql;
+        }
+
+        protected abstract string obtenerPredicadoParaLlavePrimaria();
+        
+        protected abstract string obtenerListaAtributosParaModificacion();
+
+        protected abstract void incluirValorParametrosParaModificacion();
+
+        private string generarSQLParaEliminacion()
+        {
+            string sql = "delete from " + this.Nombre_tabla;
+            sql += " where ";
+            sql += this.obtenerPredicadoParaLlavePrimaria();
+            return sql;
+        }
+
+        protected abstract void incluirValorParametrosParaEliminacion();
+
+        private int retornarUltimoAutoGenerado()
+        {
+            throw new NotImplementedException();
         }
 
         protected BindingList<Object> listarTodos(int? limite)

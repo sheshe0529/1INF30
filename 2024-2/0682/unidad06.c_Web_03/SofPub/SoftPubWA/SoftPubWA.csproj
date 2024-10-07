@@ -103,6 +103,7 @@
     <Content Include="Content\Fonts\css\v5-font-face.css" />
     <Content Include="Content\Fonts\css\v5-font-face.min.css" />
     <Content Include="Content\site.css" />
+    <Content Include="gestionar_seccion.aspx" />
     <Content Include="Images\pucp.png" />
     <Content Include="index.aspx" />
     <Content Include="mantenimiento_especialidad.aspx" />
@@ -129,6 +130,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="gestionar_seccion.aspx.cs">
+      <DependentUpon>gestionar_seccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gestionar_seccion.aspx.designer.cs">
+      <DependentUpon>gestionar_seccion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

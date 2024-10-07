@@ -82,3 +82,24 @@ D:\unidad06.b_Web_02\SofPub\SoftPubPublicacionDA\obj\Debug\SoftPubPublicacionDA.
 D:\unidad06.b_Web_02\SofPub\SoftPubPublicacionDA\obj\Debug\SoftPubP.8FECCDEB.Up2Date
 D:\unidad06.b_Web_02\SofPub\SoftPubPublicacionDA\obj\Debug\SoftPubPublicacionDA.dll
 D:\unidad06.b_Web_02\SofPub\SoftPubPublicacionDA\obj\Debug\SoftPubPublicacionDA.pdb
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\SoftPubPublicacionDA.dll.config
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\SoftPubPublicacionDA.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\SoftPubPublicacionDA.pdb
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\MySql.Data.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\SofPubDBManager.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\System.Text.Json.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\System.Memory.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\System.Threading.Tasks.Extensions.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\System.ValueTuple.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\System.Text.Encodings.Web.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\System.Numerics.Vectors.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\System.Buffers.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\SofPubDBManager.pdb
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\bin\Debug\SofPubDBManager.dll.config
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\obj\Debug\SoftPubPublicacionDA.csproj.AssemblyReference.cache
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\obj\Debug\SoftPubPublicacionDA.csproj.CoreCompileInputs.cache
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\obj\Debug\SoftPubP.8FECCDEB.Up2Date
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\obj\Debug\SoftPubPublicacionDA.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0682\unidad06.c_Web_03\SofPub\SoftPubPublicacionDA\obj\Debug\SoftPubPublicacionDA.pdb
