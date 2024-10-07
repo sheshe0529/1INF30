@@ -12,3 +12,10 @@ D:\unidad06.b_Web_02\SofPub\SoftPubPersonaModel\obj\Debug\SoftPubPersonaModel.cs
 D:\unidad06.b_Web_02\SofPub\SoftPubPersonaModel\obj\Debug\SoftPubPersonaModel.csproj.CoreCompileInputs.cache
 D:\unidad06.b_Web_02\SofPub\SoftPubPersonaModel\obj\Debug\SoftPubPersonaModel.dll
 D:\unidad06.b_Web_02\SofPub\SoftPubPersonaModel\obj\Debug\SoftPubPersonaModel.pdb
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SoftPubPersonaModel\bin\Debug\SoftPubPersonaModel.dll.config
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SoftPubPersonaModel\bin\Debug\SoftPubPersonaModel.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SoftPubPersonaModel\bin\Debug\SoftPubPersonaModel.pdb
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SoftPubPersonaModel\obj\Debug\SoftPubPersonaModel.csproj.AssemblyReference.cache
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SoftPubPersonaModel\obj\Debug\SoftPubPersonaModel.csproj.CoreCompileInputs.cache
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SoftPubPersonaModel\obj\Debug\SoftPubPersonaModel.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SoftPubPersonaModel\obj\Debug\SoftPubPersonaModel.pdb

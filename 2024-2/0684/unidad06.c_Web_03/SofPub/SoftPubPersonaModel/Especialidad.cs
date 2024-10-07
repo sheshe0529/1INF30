@@ -13,6 +13,22 @@ namespace SoftPubPersonaModel
         private string facultad;
         private Nivel nivel;
 
+        public Especialidad()
+        {
+            this.idEspecialidad = 0;
+            this.nombre_especialidad = "";
+            this.facultad = "";
+            this.nivel = Nivel.PREGRADO;
+        }
+
+        public Especialidad(int idEspecialidad, string nombre_especialidad, string facultad, Nivel nivel)
+        {
+            this.idEspecialidad = idEspecialidad;
+            this.nombre_especialidad = nombre_especialidad;
+            this.facultad = facultad;
+            this.nivel = nivel;
+        }
+
         public int IdEspecialidad { get => idEspecialidad; set => idEspecialidad = value; }
         public string Nombre_especialidad { get => nombre_especialidad; set => nombre_especialidad = value; }
         public string Facultad { get => facultad; set => facultad = value; }

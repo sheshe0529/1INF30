@@ -18,6 +18,24 @@ namespace SoftPubPersonaBO
             this.seccionDAO = new SeccionDAOImpl(); 
         }
 
+        public int insertar(string idSeccion, string nombre_seccion, string departamento)
+        {
+            Seccion seccion = new Seccion(idSeccion, nombre_seccion, departamento);
+            return this.seccionDAO.insertar(seccion);
+        }
+
+        public int modificar(string idSeccion, string nombre_seccion, string departamento)
+        {
+            Seccion seccion = new Seccion(idSeccion, nombre_seccion, departamento);
+            return this.seccionDAO.modificar(seccion);
+        }
+
+        public int eliminar(string idSeccion, string nombre_seccion, string departamento)
+        {
+            Seccion seccion = new Seccion(idSeccion, nombre_seccion, departamento);
+            return this.seccionDAO.eliminar(seccion);
+        }
+
         public BindingList<Object> listarTodos()
         {
             return this.seccionDAO.listarTodos();

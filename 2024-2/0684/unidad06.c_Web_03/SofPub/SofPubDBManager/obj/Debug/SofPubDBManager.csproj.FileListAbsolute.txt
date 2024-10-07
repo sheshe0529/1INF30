@@ -104,3 +104,20 @@ D:\unidad06.b_Web_02\SofPub\SofPubDBManager\obj\Debug\SofPubDBManager.csproj.Cor
 D:\unidad06.b_Web_02\SofPub\SofPubDBManager\obj\Debug\SofPubDB.623EF031.Up2Date
 D:\unidad06.b_Web_02\SofPub\SofPubDBManager\obj\Debug\SofPubDBManager.dll
 D:\unidad06.b_Web_02\SofPub\SofPubDBManager\obj\Debug\SofPubDBManager.pdb
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\SofPubDBManager.dll.config
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\SofPubDBManager.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\SofPubDBManager.pdb
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\MySql.Data.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\System.Memory.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\System.Threading.Tasks.Extensions.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\System.Numerics.Vectors.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\System.Buffers.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\System.ValueTuple.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\System.Text.Encodings.Web.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\obj\Debug\SofPubDBManager.csproj.AssemblyReference.cache
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\obj\Debug\SofPubDBManager.csproj.CoreCompileInputs.cache
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\obj\Debug\SofPubDB.623EF031.Up2Date
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\obj\Debug\SofPubDBManager.dll
+G:\Mi unidad\GitHubRepositorio\1INF30\2024-2\0684\unidad06.c_Web_03\SofPub\SofPubDBManager\obj\Debug\SofPubDBManager.pdb
