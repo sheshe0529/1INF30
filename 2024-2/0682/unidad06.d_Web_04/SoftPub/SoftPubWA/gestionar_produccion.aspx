@@ -196,7 +196,7 @@
                                 </div>
                             </div>
                             <div class="container row">
-                                <asp:GridView ID="ModalPublicacion_gvPublicacion" runat="server" AllowPaging="true" PageSize="5" AutoGenerateColumns="false" CssClass="table table-hover table-responsive table-striped" OnPageIndexChanging="ModalPublicacion_gvPublicacion_PageIndexChanging">
+                                <asp:GridView ID="ModalPublicacion_gvPublicacion" runat="server" AllowPaging="true" PageSize="15" AutoGenerateColumns="false" CssClass="table table-hover table-responsive table-striped" OnPageIndexChanging="ModalPublicacion_gvPublicacion_PageIndexChanging">
                                     <Columns>
                                         <asp:BoundField HeaderText="Id" DataField="IdPublicacion" />
                                         <asp:BoundField HeaderText="Título" DataField="Titulo" />

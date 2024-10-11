@@ -33,7 +33,9 @@ namespace SoftPubWA
 
         protected void lbModificar_Click(object sender, EventArgs e)
         {
-            //TODO
+            string idSeccion = ((LinkButton)sender).CommandArgument;
+            Session["idSeccion"] = idSeccion;
+            Response.Redirect("gestionar_seccion.aspx?accion=modificar");
         }
 
         protected void lbEliminar_Click(object sender, EventArgs e)

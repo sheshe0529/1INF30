@@ -28,7 +28,23 @@ namespace SoftPubWA
 
         protected void Page_Init(object sender, EventArgs e)
         {
-            //TODO
+            this.idSeccion = (string) Session["idSeccion"];
+            string accion = Request.QueryString["accion"];
+            if (accion != null && accion=="modificar")
+                esta_modificando = true;
+            else
+                esta_modificando = false;
+            if (esta_modificando)
+                this.cargarDatosDeLaBd();
+        }
+
+        private void cargarDatosDeLaBd()
+        {
+            Seccion seccion = this.seccionBo.obtenerPorId(this.idSeccion);
+            txtIdSeccion.Text = seccion.IdSeccion;
+            txtIdSeccion.Enabled = false;
+            txtSeccion.Text = seccion.Nombre_Seccion;
+            txtDepartamento.Text = seccion.Departamento;
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
