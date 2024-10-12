@@ -67,7 +67,7 @@ public class LineaDAOImpl extends DAOImpl implements LineaDAO {
     @Override
     public Integer eliminar(Linea linea) {
         this.linea = linea;
-        return super.modificar();
+        return super.eliminar();
     }
 
     @Override
@@ -78,37 +78,62 @@ public class LineaDAOImpl extends DAOImpl implements LineaDAO {
 
     @Override
     public ArrayList<Linea> listarTodos(Integer idGrupo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public Linea obtenerPorId(Linea linea) {
-        this.linea = linea;
+        Grupo grupo = new Grupo();
+        grupo.setIdGrupo(idGrupo);
+        this.linea = new Linea();
+        this.linea.setGrupo(grupo);
+        return (ArrayList<Linea>) super.listarTodos(null);
     }
 
     @Override
     protected String obtenerProyeccionParaSelect() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return "idGrupo, idLinea, nombre";
     }
-
+    
+    @Override
+    protected String obtenerPredicadoParaListado(){
+        return " where idGrupo=? ";
+    }
+    
+    @Override
+    protected void incluirValorDeParametrosParaListado() throws SQLException{
+        this.incluirParametroInt(1, this.linea.getGrupo().getIdGrupo());
+    }
+    
     @Override
     protected void agregarObjetoALaLista(List lista, ResultSet resultSet) throws SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.instanciarObjetoDelResultSet();
+        lista.add(this.linea);
     }
 
     @Override
     protected void instanciarObjetoDelResultSet() throws SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.linea = new Linea();
+        Grupo grupo = new Grupo();
+        grupo.setIdGrupo(this.resultSet.getInt("idGrupo"));
+        
+        this.linea = new Linea();
+        this.linea.setGrupo(grupo);
+        this.linea.setIdLinea(this.resultSet.getInt("idLinea"));
+        this.linea.setNombre(this.resultSet.getString("nombre"));
     }
-
+    
     @Override
-    protected void limpiarObjetoDelResultSet() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    public Linea obtenerPorId(Linea linea) {
+        this.linea = linea;
+        super.obtenerPorId();
+        return this.linea;
+    }        
 
     @Override
     protected void incluirValorDeParametrosParaObtenerPorId() throws SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.incluirParametroInt(1, this.linea.getGrupo().getIdGrupo());
+        this.incluirParametroInt(2, this.linea.getIdLinea());
     }
+    
+    @Override
+    protected void limpiarObjetoDelResultSet() {
+        this.linea = null;
+    }    
 
 }

@@ -168,7 +168,7 @@ public abstract class DAOImpl {
     protected abstract String obtenerListaDeValoresYAtributosParaModificacion();
 
     protected abstract String obtenerPredicadoParaLlavePrimaria();
-    
+
     protected abstract void incluirValorDeParametrosParaModificacion() throws SQLException;
 
     protected Integer eliminar() {
@@ -181,7 +181,7 @@ public abstract class DAOImpl {
         sql = sql.concat(this.obtenerPredicadoParaLlavePrimaria());
         return sql;
     }
-    
+
     protected abstract void incluirValorDeParametrosParaEliminacion() throws SQLException;
 
     public List listarTodos(Integer limite) {
@@ -190,6 +190,7 @@ public abstract class DAOImpl {
             this.abrirConexion();
             String sql = this.generarSQLParaListarTodos(limite);
             this.colocarSQLenStatement(sql);
+            this.incluirValorDeParametrosParaListado();
             this.ejecutarConsultaEnBD(sql);
             while (this.resultSet.next()) {
                 agregarObjetoALaLista(lista, this.resultSet);
@@ -210,6 +211,7 @@ public abstract class DAOImpl {
         String sql = "select ";
         sql = sql.concat(this.obtenerProyeccionParaSelect());
         sql = sql.concat(" from ").concat(this.nombre_tabla);
+        sql = sql.concat(this.obtenerPredicadoParaListado());
         if (limite != null && limite > 0) {
             sql = sql.concat(" limit ").concat(limite.toString());
         }
@@ -217,6 +219,15 @@ public abstract class DAOImpl {
     }
 
     protected abstract String obtenerProyeccionParaSelect();
+
+    protected String obtenerPredicadoParaListado() {
+        return "";
+    }
+
+    protected void incluirValorDeParametrosParaListado() throws SQLException {
+        //por defecto no se incluye ningún parametro para el listado
+        //de esta forma se mantiente el comportamiento de los listarTodos()
+    }
 
     protected abstract void agregarObjetoALaLista(List lista, ResultSet resultSet) throws SQLException;
 
@@ -251,7 +262,7 @@ public abstract class DAOImpl {
         sql = sql.concat(this.obtenerPredicadoParaLlavePrimaria());
         return sql;
     }
-    
+
     protected abstract void incluirValorDeParametrosParaObtenerPorId() throws SQLException;
 
     protected abstract void instanciarObjetoDelResultSet() throws SQLException;
@@ -271,7 +282,7 @@ public abstract class DAOImpl {
         - incluirParametroInt
         - incluirParametroDate
         - incluirParametroBoolean
-    */
+     */
     protected String ObtenerFechaParaSQL(Date fecha) {
         String sql = "NULL";
         if (fecha != null) {
@@ -369,9 +380,9 @@ public abstract class DAOImpl {
         } else {
             this.statement.setInt(numeroParametro, valor);
         }
-    }   
+    }
 
-    protected void incluirParametroDate(Integer numeroParametro, Date valor) throws SQLException {        
+    protected void incluirParametroDate(Integer numeroParametro, Date valor) throws SQLException {
         if (valor == null) {
             this.statement.setNull(numeroParametro, Types.DATE);
         } else {
@@ -379,12 +390,12 @@ public abstract class DAOImpl {
             this.statement.setDate(numeroParametro, sqlDate);
         }
     }
-    
-    protected void incluirParametroBoolean(Integer numeroParametro, Boolean valor) throws SQLException {        
+
+    protected void incluirParametroBoolean(Integer numeroParametro, Boolean valor) throws SQLException {
         if (valor == null) {
             this.statement.setNull(numeroParametro, Types.BOOLEAN);
-        } else {            
-            this.statement.setBoolean(numeroParametro, valor);            
+        } else {
+            this.statement.setBoolean(numeroParametro, valor);
         }
     }
 
@@ -411,13 +422,13 @@ public abstract class DAOImpl {
         } else {
             this.statement.setDate(nombreParametro, sqlDate);
         }
-    }    
-    
-    protected void incluirParametroBoolean(String nombreParametro, Boolean valor) throws SQLException {        
+    }
+
+    protected void incluirParametroBoolean(String nombreParametro, Boolean valor) throws SQLException {
         if (valor == null) {
             this.statement.setNull(nombreParametro, Types.BOOLEAN);
-        } else {            
-            this.statement.setBoolean(nombreParametro, valor);            
+        } else {
+            this.statement.setBoolean(nombreParametro, valor);
         }
     }
 }
