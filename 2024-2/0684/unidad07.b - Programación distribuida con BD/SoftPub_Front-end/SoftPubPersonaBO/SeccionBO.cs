@@ -4,13 +4,13 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SoftPubBaseBO;
-using SoftPubBaseBO.ServicioWeb;
+using SoftPubBO;
+using SoftPubBO.ServicioWeb;
 
 namespace SoftPubPersonaBO
 {
     public class SeccionBO: BaseBO
-    {  
+    {
         public int insertar(string idSeccion, string nombre_seccion, string departamento)
         {
             return this.WsCliente.seccion_insertar(idSeccion, nombre_seccion, departamento);
@@ -22,7 +22,7 @@ namespace SoftPubPersonaBO
         }
 
         public int eliminar(string idSeccion)
-        {            
+        {
             return this.WsCliente.seccion_eliminar(idSeccion);
         }
 

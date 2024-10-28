@@ -1,8 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
-using SoftPubBaseBO.ServicioWeb;
+using SoftPubBO.ServicioWeb;
 using SoftPubPersonaBO;
-using static System.Collections.Specialized.BitVector32;
 
 namespace SoftPubPersonaTest
 {
@@ -20,36 +19,16 @@ namespace SoftPubPersonaTest
             testSeccionBOListarTodos();
             testSeccionBOObtenerPorId();
             testSeccionBOEliminarSecciones();
+            System.Console.ReadKey();
         }
 
-        private static void testSeccionBOInsertarSecciones()
+        private static void testSeccionBOEliminarSecciones()
         {
-            System.Console.WriteLine("testSeccionBOInsertarSecciones");
-            int resultado = seccionBO.insertar("INF", "Ingeniería Informática", "Ingeniería");
-            resultado = seccionBO.insertar("TEL", "Ingeniería de las Telecomunicaciones", "Ingeniería");
-            resultado = seccionBO.insertar("ELE", "Ingeniería Electrónica", "Ingeniería");
-            resultado = seccionBO.insertar("MEC", "Ingeniería Mecánica", "Ingeniería");
-        }
-
-        private static void testSeccionBOModificarSecciones()
-        {
-            System.Console.WriteLine("testSeccionBOModificarSecciones");
-            int resultado = seccionBO.modificar("INF", "INFORMÁTICA", "Ingeniería");
-            resultado = seccionBO.modificar("TEL", "TELECO", "Ingeniería");
-        }
-
-        private static void testSeccionBOListarTodos()
-        {
-            System.Console.WriteLine("testSeccionBOListarTodos");
-            BindingList<seccion> listaSeccion = seccionBO.listarTodos();
-            foreach (seccion _seccion in listaSeccion)
-            {
-                System.Console.Write(_seccion.idSeccion);
-                System.Console.Write(", ");
-                System.Console.Write(_seccion.seccion1);
-                System.Console.Write(", ");
-                System.Console.Write(_seccion.departamento);
-            }
+            System.Console.WriteLine("testSeccionBOEliminarSecciones");
+            int resultado = seccionBO.eliminar("INF");
+            resultado = seccionBO.eliminar("MEC");
+            resultado = seccionBO.eliminar("ELE");
+            resultado = seccionBO.eliminar("TEL");
         }
 
         private static void testSeccionBOObtenerPorId()
@@ -84,13 +63,35 @@ namespace SoftPubPersonaTest
             }
         }
 
-        private static void testSeccionBOEliminarSecciones()
+        private static void testSeccionBOListarTodos()
         {
-            System.Console.WriteLine("estSeccionBOEliminarSecciones");
-            int resultado = seccionBO.eliminar("INF");
-            resultado = seccionBO.eliminar("MEC");
-            resultado = seccionBO.eliminar("ELE");
-            resultado = seccionBO.eliminar("TEL");
+            System.Console.WriteLine("testSeccionBOListarTodos");
+            BindingList<seccion> listaSeccion = seccionBO.listarTodos();
+            foreach (seccion _seccion in listaSeccion)
+            {
+                System.Console.Write(_seccion.idSeccion);
+                System.Console.Write(", ");
+                System.Console.Write(_seccion.seccion1);
+                System.Console.Write(", ");
+                System.Console.WriteLine(_seccion.departamento);
+            }
+        }
+
+        private static void testSeccionBOModificarSecciones()
+        {
+            System.Console.WriteLine("testSeccionBOModificarSecciones");
+            int resultado = seccionBO.modificar("INF", "INFORMÁTICA", "Ingeniería");
+            resultado = seccionBO.modificar("TEL", "TELECO", "Ingeniería");
+
+        }
+
+        private static void testSeccionBOInsertarSecciones()
+        {
+            System.Console.WriteLine("testSeccionBOInsertarSecciones");
+            int resultado = seccionBO.insertar("INF", "Ingeniería Informática", "Ingeniería");
+            resultado = seccionBO.insertar("TEL", "Ingeniería de las Telecomunicaciones", "Ingeniería");
+            resultado = seccionBO.insertar("ELE", "Ingeniería Electrónica", "Ingeniería");
+            resultado = seccionBO.insertar("MEC", "Ingeniería Mecánica", "Ingeniería");
         }
     }
 }

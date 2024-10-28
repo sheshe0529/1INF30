@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1EBAE4B0-EFAE-441F-932C-81737B6EE789}</ProjectGuid>
+    <ProjectGuid>{34E6DF59-3B23-422F-8CB1-8410C4487A70}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>SoftPubPersonaTest</RootNamespace>
     <AssemblyName>SoftPubPersonaTest</AssemblyName>
@@ -43,21 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EspecialidadBOTest.cs" />
-    <Compile Include="SeccionBOTest.cs" />
-    <Compile Include="SoftPubDBPersonaTest.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeccionBOTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SoftPubBaseBO\SoftPubBaseBO.csproj">
-      <Project>{E903B5D7-1AD9-4A51-86ED-FC7C2636909B}</Project>
-      <Name>SoftPubBaseBO</Name>
+    <ProjectReference Include="..\SoftPubBO\SoftPubBO.csproj">
+      <Project>{761FB66C-15F1-4C76-9533-20DEC69BC224}</Project>
+      <Name>SoftPubBO</Name>
     </ProjectReference>
     <ProjectReference Include="..\SoftPubPersonaBO\SoftPubPersonaBO.csproj">
-      <Project>{61BCA54A-15DB-4DE5-B2F6-4925A7D7504E}</Project>
+      <Project>{75B6E06E-254A-4507-B6E9-26E669D6BA6F}</Project>
       <Name>SoftPubPersonaBO</Name>
     </ProjectReference>
   </ItemGroup>

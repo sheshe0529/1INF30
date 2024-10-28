@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{61BCA54A-15DB-4DE5-B2F6-4925A7D7504E}</ProjectGuid>
+    <ProjectGuid>{75B6E06E-254A-4507-B6E9-26E669D6BA6F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SoftPubPersonaBO</RootNamespace>
@@ -42,14 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EspecialidadBO.cs" />
     <Compile Include="SeccionBO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SoftPubBaseBO\SoftPubBaseBO.csproj">
-      <Project>{e903b5d7-1ad9-4a51-86ed-fc7c2636909b}</Project>
-      <Name>SoftPubBaseBO</Name>
+    <ProjectReference Include="..\SoftPubBO\SoftPubBO.csproj">
+      <Project>{761FB66C-15F1-4C76-9533-20DEC69BC224}</Project>
+      <Name>SoftPubBO</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

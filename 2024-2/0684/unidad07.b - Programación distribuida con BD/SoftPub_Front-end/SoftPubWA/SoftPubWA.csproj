@@ -125,11 +125,9 @@
     <Content Include="Content\Fonts\css\v5-font-face.min.css" />
     <Content Include="Content\Fonts\LICENSE.txt" />
     <Content Include="Content\site.css" />
-    <Content Include="gestionar_especialidad.aspx" />
     <Content Include="gestionar_seccion.aspx" />
     <Content Include="Images\pucp.png" />
     <Content Include="index.aspx" />
-    <Content Include="mantenimiento_especialidad.aspx" />
     <Content Include="mantenimiento_seccion.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -154,13 +152,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="gestionar_especialidad.aspx.cs">
-      <DependentUpon>gestionar_especialidad.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="gestionar_especialidad.aspx.designer.cs">
-      <DependentUpon>gestionar_especialidad.aspx</DependentUpon>
-    </Compile>
     <Compile Include="gestionar_seccion.aspx.cs">
       <DependentUpon>gestionar_seccion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -174,13 +165,6 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="mantenimiento_especialidad.aspx.cs">
-      <DependentUpon>mantenimiento_especialidad.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="mantenimiento_especialidad.aspx.designer.cs">
-      <DependentUpon>mantenimiento_especialidad.aspx</DependentUpon>
     </Compile>
     <Compile Include="mantenimiento_seccion.aspx.cs">
       <DependentUpon>mantenimiento_seccion.aspx</DependentUpon>
@@ -231,6 +215,16 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SoftPubBO\SoftPubBO.csproj">
+      <Project>{761FB66C-15F1-4C76-9533-20DEC69BC224}</Project>
+      <Name>SoftPubBO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoftPubPersonaBO\SoftPubPersonaBO.csproj">
+      <Project>{75B6E06E-254A-4507-B6E9-26E669D6BA6F}</Project>
+      <Name>SoftPubPersonaBO</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
