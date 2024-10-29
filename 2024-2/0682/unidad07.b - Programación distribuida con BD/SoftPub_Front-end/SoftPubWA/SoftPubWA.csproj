@@ -232,6 +232,16 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SoftPubBaseBO\SoftPubBaseBO.csproj">
+      <Project>{1af9223e-e179-432f-b67e-b3c50651cd90}</Project>
+      <Name>SoftPubBaseBO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SoftPubPersonaBO\SoftPubPersonaBO.csproj">
+      <Project>{a0461741-a258-4d32-b6c6-bd4e3511506b}</Project>
+      <Name>SoftPubPersonaBO</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

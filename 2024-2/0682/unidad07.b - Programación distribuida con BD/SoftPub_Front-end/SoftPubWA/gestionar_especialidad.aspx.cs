@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using SoftPubBaseBO.ServicioWeb;
+using SoftPubPersonaBO;
 
 namespace SoftPubWA
 {
@@ -51,10 +53,10 @@ namespace SoftPubWA
             string nombre_especialidad = txtEspecialidad.Text;
             string faculdad = txtFacultad.Text;
             string descripcion_nivel = ddlNivel.Text;
-            if (esta_modificando)
-                this.especialidadBO.modificar(idEspecialidad, nombre_especialidad, faculdad, descripcion_nivel);
-            else
-                this.especialidadBO.insertar(idEspecialidad, nombre_especialidad, faculdad, descripcion_nivel);
+            //if (esta_modificando)
+            //    this.especialidadBO.modificar(idEspecialidad, nombre_especialidad, faculdad, descripcion_nivel);
+            //else
+            //    this.especialidadBO.insertar(idEspecialidad, nombre_especialidad, faculdad, descripcion_nivel);
 
             Response.Redirect("mantenimiento_especialidad.aspx");
         }

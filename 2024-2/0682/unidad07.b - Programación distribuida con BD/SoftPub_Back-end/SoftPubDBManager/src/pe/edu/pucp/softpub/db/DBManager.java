@@ -61,7 +61,7 @@ public class DBManager {
         url = url.concat(this.base_de_datos);    
         //este parámetro se coloca para que no pida las 
         //credenciales de usuario y contraseña SSL
-        //url = url.concat("?useSSL=false");                
+        url = url.concat("?useSSL=false");                
         return url;
     }
 

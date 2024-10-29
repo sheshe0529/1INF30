@@ -35,5 +35,5 @@ public class SeccionBO {
     
     public Seccion obtenerPorId(String idSeccion){
         return seccionDAO.obtenerPorId(idSeccion);
-    }
+    }       
 }
