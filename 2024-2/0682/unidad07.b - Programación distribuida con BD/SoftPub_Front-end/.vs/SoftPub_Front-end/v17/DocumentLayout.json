@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad07.b - Programaci\u00F3n distribuida con BD\\SoftPub_Front-end\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF1E691F-6749-48A2-8240-75D8FA0B9F86}|SoftPubWA\\SoftPubWA.csproj|g:\\mi unidad\\githubrepositorio\\1inf30\\2024-2\\0682\\unidad07.b - programaci\u00F3n distribuida con bd\\softpub_front-end\\softpubwa\\gestionar_especialidad.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF1E691F-6749-48A2-8240-75D8FA0B9F86}|SoftPubWA\\SoftPubWA.csproj|solutionrelative:softpubwa\\gestionar_especialidad.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "gestionar_especialidad.aspx.cs",
+              "DocumentMoniker": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad07.b - Programaci\u00F3n distribuida con BD\\SoftPub_Front-end\\SoftPubWA\\gestionar_especialidad.aspx.cs",
+              "RelativeDocumentMoniker": "SoftPubWA\\gestionar_especialidad.aspx.cs",
+              "ToolTip": "G:\\Mi unidad\\GitHubRepositorio\\1INF30\\2024-2\\0682\\unidad07.b - Programaci\u00F3n distribuida con BD\\SoftPub_Front-end\\SoftPubWA\\gestionar_especialidad.aspx.cs",
+              "RelativeToolTip": "SoftPubWA\\gestionar_especialidad.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T11:48:18.414Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
