@@ -9,33 +9,36 @@ import pe.edu.pucp.softpub.rmi.interfaces.EspecialidadBO;
 
 public class EspecialidadBOImpl extends UnicastRemoteObject implements EspecialidadBO {
 
+    private pe.edu.pucp.softpub.persona.bo.EspecialidadBO especialidadBO;
+    
     public EspecialidadBOImpl(Integer puerto) throws RemoteException {
         super(puerto);
+        this.especialidadBO = new pe.edu.pucp.softpub.persona.bo.EspecialidadBO();
     }
 
     @Override
     public Integer insertar(Integer idEspecialidad, String nombre_especialidad, String facultad, Nivel nivel) throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.especialidadBO.insertar(idEspecialidad, nombre_especialidad, facultad, nivel);
     }
 
     @Override
     public Integer modificar(Integer idEspecialidad, String nombre_especialidad, String facultad, Nivel nivel) throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.especialidadBO.modificar(idEspecialidad, nombre_especialidad, facultad, nivel);
     }
 
     @Override
     public Integer eliminar(Integer idEspecialidad) throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.especialidadBO.eliminar(idEspecialidad);
     }
 
     @Override
     public ArrayList<Especialidad> listarTodos() throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.especialidadBO.listarTodos();
     }
 
     @Override
     public Especialidad obtenerPorId(Integer idEspecialidad) throws RemoteException {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.especialidadBO.obtenerPorId(idEspecialidad);
     }
 
 }
