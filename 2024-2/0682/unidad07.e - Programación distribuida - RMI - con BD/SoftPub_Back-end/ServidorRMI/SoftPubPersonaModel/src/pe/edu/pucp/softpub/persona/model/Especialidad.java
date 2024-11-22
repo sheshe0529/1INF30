@@ -1,10 +1,12 @@
 package pe.edu.pucp.softpub.persona.model;
 
+import java.io.Serializable;
+
 /**
  *
  * Autor: andres
  */
-public class Especialidad {
+public class Especialidad implements Serializable{
 
     private Integer idEspecialidad;
     private String especialidad;

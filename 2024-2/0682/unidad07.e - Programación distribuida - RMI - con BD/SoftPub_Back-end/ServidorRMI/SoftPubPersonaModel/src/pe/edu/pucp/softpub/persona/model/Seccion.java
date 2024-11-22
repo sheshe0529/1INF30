@@ -1,10 +1,12 @@
 package pe.edu.pucp.softpub.persona.model;
 
+import java.io.Serializable;
+
 /**
  *
  * Autor: andres
  */
-public class Seccion{
+public class Seccion implements Serializable{
 
     private String idSeccion;
     private String seccion;
