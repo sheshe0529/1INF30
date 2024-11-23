@@ -8,6 +8,7 @@ import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import pe.edu.pucp.softpub.persona.model.Especialidad;
@@ -20,10 +21,11 @@ import pe.edu.pucp.softpub.rmi.servidor.SoftPubRMI_Servidor;
 @WebService(serviceName = "ServicioWeb")
 public class ServicioWeb {
 
-    //esto se lee de un archivo rmi.properties
+    //datos del servidor RMI
     private String IP = "localhost";
     private Integer puerto = 1234;
 
+    //interfaces remotas
     private SeccionBO seccionBO;
     private EspecialidadBO especialidadBO;
 
@@ -41,7 +43,7 @@ public class ServicioWeb {
 
     @WebMethod(operationName = "seccion_insertar")
     public Integer seccion_insertar(@WebParam(name = "idSeccion") String idSeccion, @WebParam(name = "nombre_seccion") String nombre_seccion, @WebParam(name = "departamento") String departamento) {
-        Integer retorno = 0;
+        Integer retorno = null;
         try {
             retorno = this.seccionBO.insertar(idSeccion, nombre_seccion, departamento);
         } catch (RemoteException ex) {
@@ -52,7 +54,7 @@ public class ServicioWeb {
 
     @WebMethod(operationName = "seccion_modificar")
     public Integer seccion_modificar(@WebParam(name = "name") String idSeccion, @WebParam(name = "nombre_seccion") String nombre_seccion, @WebParam(name = "departamento") String departamento) {
-        Integer retorno = 0;
+        Integer retorno = null;
         try {
             retorno = this.seccionBO.modificar(idSeccion, nombre_seccion, departamento);
         } catch (RemoteException ex) {
@@ -63,7 +65,7 @@ public class ServicioWeb {
 
     @WebMethod(operationName = "seccion_eliminar")
     public Integer seccion_eliminar(@WebParam(name = "idSeccion") String idSeccion) {
-        Integer retorno = 0;
+        Integer retorno = null;
         try {
             retorno = this.seccionBO.eliminar(idSeccion);
         } catch (RemoteException ex) {
@@ -96,7 +98,7 @@ public class ServicioWeb {
 
     @WebMethod(operationName = "especialidad_insertar")
     public Integer especialidad_insertar(@WebParam(name = "idEspecialidad") Integer idEspecialidad, @WebParam(name = "nombre_especialidad") String nombre_especialidad, @WebParam(name = "facultad") String facultad, @WebParam(name = "nivel") Nivel nivel) {
-        Integer retorno = 0;
+        Integer retorno = null;
         try {
             retorno = especialidadBO.insertar(idEspecialidad, nombre_especialidad, facultad, nivel);
         } catch (RemoteException ex) {
@@ -107,7 +109,7 @@ public class ServicioWeb {
 
     @WebMethod(operationName = "especialidad_modificar")
     public Integer especialidad_modificar(@WebParam(name = "idEspecialidad") Integer idEspecialidad, @WebParam(name = "nombre_especialidad") String nombre_especialidad, @WebParam(name = "facultad") String facultad, @WebParam(name = "nivel") Nivel nivel) {
-        Integer retorno = 0;
+        Integer retorno = null;
         try {
             retorno = especialidadBO.modificar(idEspecialidad, nombre_especialidad, facultad, nivel);
         } catch (RemoteException ex) {
@@ -118,7 +120,7 @@ public class ServicioWeb {
 
     @WebMethod(operationName = "especialidad_eliminar")
     public Integer especialidad_eliminar(@WebParam(name = "idEspecialidad") Integer idEspecialidad) {
-        Integer retorno = 0;
+        Integer retorno = null;
         try {
             retorno = especialidadBO.eliminar(idEspecialidad);
         } catch (RemoteException ex) {

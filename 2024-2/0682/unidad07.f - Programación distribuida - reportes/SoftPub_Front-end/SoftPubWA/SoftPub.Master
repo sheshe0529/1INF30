@@ -48,6 +48,9 @@
                 <li class="nav-item mb-1">
                     <a href="mantenimiento_grupo.aspx"><i class="fa-solid fa-people-group pe-2"></i>Grupo</a>
                 </li>
+                <li class="nav-item mb-1">
+                    <a href="reporte_seccion.aspx" target="_blank"><i class="fa-solid fa-file pe-2"></i>Rep. Seccion</a>
+                </li>
             </ul>
             <hr>
             <div class="d-flex">

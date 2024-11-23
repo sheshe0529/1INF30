@@ -11,6 +11,10 @@ namespace SoftPubPersonaBO
 {
     public class SeccionBO: BaseBO
     {  
+        public byte[] reporteSeccion()
+        {
+            return WsReportes.reporteSeccion();
+        }
         public int insertar(string idSeccion, string nombre_seccion, string departamento)
         {
             return this.WsCliente.seccion_insertar(idSeccion, nombre_seccion, departamento);

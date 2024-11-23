@@ -56,87 +56,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Connected Services\ServicioWeb\Reportes.wsdl" />
+    <None Include="Connected Services\ServicioWeb\Reportes.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Connected Services\ServicioWeb\ServicioWeb.wsdl" />
     <None Include="Connected Services\ServicioWeb\ServicioWeb.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.alumno.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.alumno_eliminarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.alumno_insertarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.alumno_listarTodosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.alumno_modificarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.alumno_obtenerPorIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.articulo_eliminarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.articulo_insertarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.articulo_listarTodosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.articulo_modificarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.articulo_obtenerPorIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.capitulo_eliminarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.capitulo_insertarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.capitulo_listarTodosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.capitulo_modificarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.capitulo_obtenerPorIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.conferencia_eliminarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.conferencia_insertarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.conferencia_listarTodosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.conferencia_modificarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.conferencia_obtenerPorIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.editorial_eliminarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.editorial_insertarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.editorial_listarTodosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.editorial_modificarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.editorial_obtenerPorIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.especialidad.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -156,79 +82,7 @@
     <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.especialidad_obtenerPorIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.grupo.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.grupo_eliminarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.grupo_insertarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.grupo_listarTodosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.grupo_modificarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.grupo_obtenerPorIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.libro_eliminarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.libro_insertarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.libro_listarTodosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.libro_modificarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.libro_obtenerPorIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.linea.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.linea_eliminarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.linea_insertarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.linea_listarTodosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.linea_modificarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.linea_obtenerPorIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.profesor.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.profesor_eliminarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.profesor_existeProfesorResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.profesor_insertarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.profesor_listarTodosResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.profesor_modificarResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.profesor_obtenerPorIdResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.publicacion.datasource">
+    <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.reporteSeccionResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\ServicioWeb\SoftPubBaseBO.ServicioWeb.seccion.datasource">
@@ -252,6 +106,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServicioWeb\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServicioWeb\archivo.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Connected Services\ServicioWeb\configuration91.svcinfo" />
